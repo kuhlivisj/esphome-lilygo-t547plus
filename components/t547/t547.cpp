@@ -2,7 +2,6 @@
 #include "esphome/core/log.h"
 #include "esphome/core/application.h"
 #include "esphome/core/helpers.h"
-#ifdef USE_ESP32_FRAMEWORK_ARDUINO
 
 #include <esp32-hal-gpio.h>
 
@@ -84,5 +83,3 @@ void T547::display() {
 
 }  // namespace T547
 }  // namespace esphome
-
-#endif  // USE_ESP32_FRAMEWORK_ARDUINO
