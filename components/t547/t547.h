@@ -5,7 +5,12 @@
 #include "esphome/core/version.h"
 #include "esphome/components/display/display_buffer.h"
 
-#include <epd_driver.h>
+//#include <epd_driver.h>
+#ifndef EPD_DRIVER
+#define EPD_DRIVER
+#include "epd_driver.h"
+#endif
+
 
 #ifdef USE_ESP32_FRAMEWORK_ARDUINO
 
